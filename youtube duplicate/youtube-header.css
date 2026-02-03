@@ -1,0 +1,210 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 10px;
+  z-index: 100;
+  
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(197, 195, 195);
+}
+
+.leftside{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 8px;
+} .hamburger-menu{ 
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+  } .yt-logo{
+      height: 20px;
+    }
+
+form{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+} .search-form{
+  display: flex;
+  flex-direction: 1;
+  align-items: center;
+  margin: 0;
+}
+
+.middle{
+  display: flex;
+  flex: 1;
+  margin-left: 25px;
+  margin-right: 35px;
+  max-width: 330px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  grid:0;
+} .searchbar{
+    flex: 1;
+    height: 36px;
+    border-width:1px;
+    border-style: solid;
+    border-color: rgb(172, 172, 172);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    padding-left: 15px;
+    padding-top: 5px;
+    width: 0;
+    outline-width: 0;
+    font-size:18px;
+    outline: none;
+  } .searchbar::placeholder{
+      font-size: 18px;
+    } .search-button{
+        width: 40px;
+        height: 44px;
+        border-width:1px;
+        border-style: solid;
+        border-color: rgb(172, 172, 172);
+        box-shadow: inset 1px 1px 5px rgba(0,0,0,0.1);
+        margin-right:10px;
+        margin-left: -30px;
+        border-radius: 5px;
+      } .search-icon{
+          height: 20px;
+          margin-top: 4px;
+      } .voice-button{
+          width: 40px;
+          height: 45px;
+          border-width:1px;
+          border-style: solid;
+          box-shadow: inset 1px 1px 5px rgba(201, 201, 201, 0.1);
+          border-radius: 20px;
+          border: none;
+        } .voice-icon{
+            height: 20px;
+            width: 20px;
+          }
+
+.rightside{
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-shrink: 0;
+  margin-right: 20px;
+} .img1{
+  width: 35px;
+  border-radius: 20px;
+  } .video-icon{
+      width: 30px;
+    } .square-icon{
+        width: 30px;
+      } .notification-icon{
+          width: 30px;
+        }
+
+.notification-container{
+    position: relative;
+  } .notification-number{
+      position: absolute;
+      background-color: rgb(235, 7, 7);
+      color: white;
+      top: -2px;
+      right: -3px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 6px;
+      padding-right: 6px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-family: Roboto;
+  }
+
+  .search-button, .voice-button{
+    cursor: pointer;
+    position: relative;
+  } .search-button .toolpin, .voice-button .toolpin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    position: absolute;
+    color: white;
+    background-color: rgb(77, 75, 75);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    bottom: -29px;
+    left: -10px;
+    opacity: 0;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+
+  .search-button:hover .toolpin, .voice-button:hover .toolpin{
+    opacity: 1;
+  }
+
+  .video-icon-container, .square-container, .profile-container{
+    position: relative;
+  } .video-icon-container .toolpin{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    position: absolute;
+    color: white;
+    background-color: rgb(77, 75, 75);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    bottom: -40px;
+    left: -20px;
+    opacity: 0;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 13px;
+    width: 50px;
+  }
+
+   .square-container .toolpin, .notification-container .toolpin, .profile-container .toolpin{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    position: absolute;
+    color: white;
+    background-color: rgb(77, 75, 75);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    bottom: -20px;
+    left: -20px;
+    opacity: 0;
+    border-radius: 5px;
+    pointer-events: none;
+    font-size: 13px;
+   }
+
+  .video-icon-container:hover .toolpin, .square-container:hover .toolpin, .notification-container:hover .toolpin,
+  .profile-container:hover .toolpin{
+    opacity:1;
+  }
